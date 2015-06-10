@@ -1,0 +1,81 @@
+<div class="row">
+    <div class="col-md-12">
+        <h1>{{ datas.Title }} <small>{{ datas.Year }}</small></h1>
+        <hr>
+
+        <div class="row">
+            <div class="col-sm-3">
+                <img src="{{ datas.Poster }}" class="poster">
+            </div>
+            <div class="col-sm-9">
+                <h4>Summary</h4>
+                <p>{{ datas.Plot }}</p>
+
+                <h5>Director</h5>
+                <p>{{ datas.Director }}</p>
+
+                <h5>Writer</h5>
+                <p>{{ datas.Writer }}</p>
+            
+                <h5>Actors</h5>
+                <p>{{ datas.Actors }}</p>
+
+                <table class="table table-bordered">
+                    <tr>
+                        <th>Rated</th>
+                        <td>{{ datas.Rated }}</td>
+                    </tr>
+                    <tr>
+                        <th>Released</th>
+                        <td>{{ datas.Released }}</td>
+                    </tr>
+                    <tr>
+                        <th>Runtime</th>
+                        <td>{{ datas.Runtime }}</td>
+                    </tr>
+                    <tr>
+                        <th>Genre</th>
+                        <td>{{ datas.Genre }}</td>
+                    </tr>
+                    
+                    <tr>
+                        <th>Language</th>
+                        <td>{{ datas.Language }}</td>
+                    </tr>
+                    <tr>
+                        <th>Country</th>
+                        <td>{{ datas.Country }}</td>
+                    </tr>
+                    <tr>
+                        <th>Awards</th>
+                        <td>{{ datas.Awards }}</td>
+                    </tr>
+                    <tr>
+                        <th>Metascore</th>
+                        <td>{{ datas.Metascore }}</td>
+                    </tr>
+                    <tr>
+                        <th>imdbRating</th>
+                        <td>{{ datas.imdbRating }} / {{ datas.imdbVotes }}</td>
+                    </tr>
+                    <tr>
+                        <th>Language</th>
+                        <td>{{ datas.Language }}</td>
+                    </tr>
+                    <tr>
+                        <th>Language</th>
+                        <td>{{ datas.Language }}</td>
+                    </tr>
+                    <tr>
+                        <th>IMDB</th>
+                        <td><a href="http://www.imdb.com/title/{{ datas.imdbID }}" target="_blank">IMDB</a></td>
+                    </tr>
+                </table>
+
+                <p> <a href="/#/" class="btn btn-primary">Back</a> </p>
+                
+            </div>
+        </div>
+
+    </div>
+</div>

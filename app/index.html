@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>OMDB</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="bower_components/animate.css/animate.css" />
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+
+    <div class="container">
+        <p class="text-right index-button"><a href="/#/" class="btn btn-xs btn-primary">HOME</a></p>
+        <div ng-app="omdb" ng-class="animation">
+            <div ng-view class="view"></div>
+        </div>
+    </div>
+
+    <!-- scripts -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/omdb.js"></script>
+
+</body>
+
+</html>

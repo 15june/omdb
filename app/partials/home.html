@@ -1,0 +1,24 @@
+<div class="row">
+    <div class="col-md-12">
+
+        <h1>OMDB</h1>
+        <hr>
+        <div class="row">
+            <div class="col-sm-12">
+                <form class="form-inline">
+                		Search your favorite movie: 
+                    <input type="text" ng-model="searchMovie" class="form-control" placeholder="Search"> 
+                    <a ng-click="searchButton()" class="btn btn-primary">Search</a>
+                </form>
+                <hr>
+
+								<div class="list-group">
+									<a href="/#/movie/detail/{{ data.Title }}" class="list-group-item" ng-repeat="data in datas">
+										<h5 class="list-group-item-heading">{{ data.Title }} <small>{{ data.Year }}</small></h5>
+									</a>
+								</div>
+            </div>
+        </div>
+
+    </div>
+</div>

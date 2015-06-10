@@ -1,0 +1,116 @@
+/* Basic */
+
+body {
+    background-color: #ecf0f1;
+}
+hr {
+    border-color: #CCC;
+}
+a:hover {
+    text-decoration: none;
+}
+.btn {
+    transition: all 0.2s ease-in-out;
+}
+
+img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.poster {
+    padding: 10px;
+    background-color: #FFF;
+    box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.10);
+    border-radius: 4px;
+}
+
+h1 {
+    color: #34495e;
+}
+.container {
+    position: relative;
+}
+.index-button {
+    margin-top: 10px;
+}
+/* Default view */
+.view {
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+}
+/* Fade animation*/
+
+.an-fade .view.ng-enter {
+    opacity: 0;
+}
+.an-fade .view.ng-enter.ng-enter-active {
+    opacity: 1;
+}
+.an-fade .view.ng-leave {
+    opacity: 1;
+}
+.an-fade .view.ng-leave.ng-leave-active {
+    opacity: 0;
+}
+
+/* Slide Horz animation*/
+
+.an-slidehorz .view.ng-enter {
+    left: -100%;
+}
+.an-slidehorz .view.ng-enter.ng-enter-active {
+    left: 0%;
+}
+.an-slidehorz .view.ng-leave {
+    left: 0%;
+}
+.an-slidehorz .view.ng-leave.ng-leave-active {
+    left: -100%;
+}
+
+
+/* Animations */
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: #e74c3c;
+    transition: all 0.5s ease-in-out;
+}
+.box:hover {
+    background-color: #34495e;
+}
+.box-shape {
+    width: 200px;
+    height: 200px;
+    background-color: #2ecc71;
+    transition: all 0.5s ease-in-out;
+}
+.box-shape:hover {
+    border-radius: 100%;
+}
+.box-opacity {
+    width: 200px;
+    height: 200px;
+    background-color: #9b59b6;
+    transition: all 0.5s ease-in-out;
+}
+.box-opacity:hover {
+    opacity: 0;
+}
+.box-all {
+    width: 200px;
+    height: 200px;
+    background-color: #1abc9c;
+    transition: all 0.5s ease-in-out;
+}
+.box-all:hover {
+    opacity: 0;
+    background-color: #34495e;
+    border-radius: 100%;
+    opacity: 0;
+}
